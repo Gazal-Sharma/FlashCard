@@ -1,0 +1,48 @@
+@import "tailwindcss";
+/* Needed for 3D card flip effect */
+.perspective {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+/* Needed for 3D card flip effect */
+.perspective {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Shadow pulse effect when card flips */
+@keyframes shadowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px 3px rgba(99, 102, 241, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 30px 6px rgba(99, 102, 241, 1);
+  }
+}
+.shadow-pulse {
+  animation: shadowPulse 1s ease-in-out infinite;
+}
+
+/* Smooth hover blur and shadow for flashcard */
+.hover\\:blur-sm:hover {
+  filter: blur(2px);
+  transition: filter 0.3s ease;
+}
